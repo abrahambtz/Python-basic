@@ -1,0 +1,102 @@
+Comandos para desplazarse por un archivo
+--------------------------------------------
+h - Se desplaza un espacio a la izquierda.
+l - Se desplaza un espacio a la derecha.
+k - Se desplaza una línea hacía arriba.
+j - Se desplaza una línea hacía abajo.
+
+
+
+Comandos de inserción
+--------------------------
+a - Agrega texto después del cursor y entra al modo de inserción.
+A - Agrega texto al final de la línea y entra al modo de inserción.
+i - Inserta texto antes del cursor y entra al modo de inserción.
+I - Inserta texto al inicio de la línea y entra al modo de inserción.
+o - Abre una línea debajo del cursor y entra al modo de inserción.
+O - Abre una línea encima del cursor y entra al modo de inserción.
+
+Comandos de deshacer y hacer 
+------------------------------
+u - Revierte la última modificación.
+U - Revierte todas las modificaciones hechas en la línea actual
+
+
+Comandos para encontrar texto
+-------------------------------------
+/ - Buscar una cadena de caracteres a partir del cursor hacía el fin del archivo.
+? - Buscar una cadena de caracteres a partir del cursor hacía el inicio del archivo.
+n - Ir a la siguiente cadena que coincida con la que se busca en el archivo.
+
+Comandos para guardar y salir
+-------------------------------
+:w - Guardar (salvar) el archivo.
+:q! - Salir sin guardar.
+:wq - Guardar todas las modificaciones y salir.
+
+Comandos para copiar y pegar
+----------------------------
+yy - copiar una línea
+2yy - copiar dos líneas
+yw - copiar el resto de los carácteres de la palabra desde la posición del cursor hasta el principio de la siguiente palabra
+y$ - copiar hasta el final de la línea
+p - pegar antes del cursor
+P - pegar después del cursor
+dd - cortar una línea
+2dd - cortar dos líneas
+dw - cortar el resto de los carácteres de la palabra desde la posición del cursor hasta el principio de la siguiente palabra
+D - cortar hasta el final de la línea
+d$ - cortar hasta el final de la línea
+x - cortar carácter
+
+Comandos visuales
+-------------------
+> - mover texto hacia la derecha
+< - mover texto hacia la izquierda
+y - copiar texto seleccionado
+d - eliminar texto seleccionado
+~ - pasar de minúscula a mayúscula y viceversa
+u - cambiar el texto marcado a minúsculas
+U - cambiar el texto marcado a mayúsculas
+
+Comandos para movel el cursor.
+------------------------------
+h - mover el cursor hacia la izquierda
+j - mover el cursor hacia abajo
+k - mover el cursor hacia arriba
+l - mover el cursor hacia la derecha
+H - moverse hacia la parte superior de la pantalla
+M - moverse hacia el centro de la pantalla
+L - moverse hacia la parte inferior de la pantalla
+w - saltar hasta el inicio de la siguiente palabra
+W - saltar hasta el inicio de la siguiente palabra (incluso con puntuación)
+e - saltar hasta el final de la siguiente palabra
+E - saltar hasta el final de la siguiente palabra (incluso con puntuación)
+b - regresar al inicio de una palabra
+B - regresar al inicio de una palabra (incluso con puntuación)
+% - ir al carácter asociado (pares por defecto: '()', '{}', '[]' - usar :h matchpairs en vim para más información)
+0 - saltar al inicio de la línea
+^ - saltar al primer carácter no-espacio de la línea
+$ - saltar al final de la línea
+g_ - saltar al último carácter no-espacio de la línea
+gg - ir a la primera línea del documento
+G - ir a la última línea del documento
+5gg or 5G - ir a la línea 5
+gd - move to local declaration
+gD - move to global declaration
+fx - saltar a la siguiente ocurrencia del carácter x
+tx - saltar a la ocurrencia previa del carácter x
+Fx - saltar a la aparición anterior del carácter x
+Tx - saltar a después de la aparición anterior del carácter x
+; - repetir el movimiento anterior de f, t, F o T
+, - repetir el movimiento anterior de f, t, F o T, hacia atrás
+} - saltar al párrafo siguiente (o función/bloque, en modo edición)
+{ - saltar al párrafo previo (o función/bloque, en modo edición)
+zz - centrar el cursor en la pantalla
+Ctrl + e - mover la pantalla hacia abajo una línea (sin mover el cursor)
+Ctrl + y - mover la pantalla una línea hacia arriba (sin mover el cursor)
+Ctrl + b - retroceder una pantalla
+Ctrl + f - avanzar una pantalla
+Ctrl + d - avanzar cursor media pantalla
+Ctrl + u - retroceder cursor media pantalla
+Tip Escribir un número antes del comando de movimiento para repetirlo. Por ejemplo, 4j mueve el cursor hacia abajo 4 líneas.
